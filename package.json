@@ -1,0 +1,53 @@
+{
+  "name": "rag-chatbot-system",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db-setup": "npx tsx scripts/manual-db-setup.ts",
+    "db-production": "npx tsx scripts/setup-database.ts",
+    "test-connection": "npx tsx scripts/test-connection.ts",
+    "check-status": "npx tsx scripts/check-status.ts"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.15.0",
+    "@langchain/community": "^0.2.0",
+    "@langchain/google-genai": "^0.0.22",
+    "@ricky0123/vad-web": "^0.0.19",
+    "@types/cheerio": "^0.22.0",
+    "@types/node": "^20.0.0",
+    "@types/pg": "^8.11.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/uuid": "^9.0.0",
+    "@types/ws": "^8.5.0",
+    "autoprefixer": "^10.4.0",
+    "cheerio": "^1.1.0",
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.0.0",
+    "langchain": "^0.2.0",
+    "lucide-react": "^0.378.0",
+    "next": "^14.2.0",
+    "pg": "^8.16.3",
+    "pgvector": "^0.1.8",
+    "postcss": "^8.4.0",
+    "puppeteer": "^22.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss": "^3.4.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.0.0",
+    "uuid": "^9.0.0",
+    "ws": "^8.17.0",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^7.0.4",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.2.0"
+  }
+}
